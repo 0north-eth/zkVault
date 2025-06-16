@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Zero North Vault</title>
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+    body {
+      font-family: sans-serif;
+      background: #05112c;
+      color: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .wrapper { width: 100%; max-width: 600px; height: auto; padding: 20px; }
+    .logo { display: block; width: 80%; max-width: 400px; margin: 0 auto 1rem auto; }
+    .timestamp {
+      background-color: #172a3a;
+      color: #1ABC9C;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: bold;
+    }
+    .intro { color: #aaa; margin-bottom: 2rem; line-height: 1.4; }
+    input, textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      background: #0d2148;
+      color: #eee;
+      font-size: 1rem;
+      resize: vertical;
+    }
+    #controls {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    button {
+      flex: 1;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 20px;
+      background: #1e90ff;
+      color: #121212;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover { background: #0f78d4; }
+    textarea#output { background: #0d2148; color: #0f0; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <img id="logoImg" class="logo" alt="Zero North Logo" />
+    <div class="timestamp" id="timestamp">Vault created at: ...</div>
+    <p class="intro">
+      Your own personal offline secret-code cipher. Double-click downloaded EXE, enter your code word, then encrypt or decrypt your sensitive data.
+    </p>
+    <input id="root" type="password" placeholder="Enter your code word or string." />
+    <textarea id="input" rows="4" placeholder="Text to encode/decode"></textarea>
+    <div id="controls">
+      <button id="encodeBtn">🔐 Encode</button>
+      <button id="decodeBtn">🔓 Decode</button>
+    </div>
+    <textarea id="output" rows="4" readonly placeholder="Result appears here"></textarea>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
