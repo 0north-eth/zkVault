@@ -5,21 +5,21 @@
 <h1 align="center">Zero North Vault</h1>
 
 <p align="center">
-  Your personal 1-of-1 cipher engine — a sovereign, offline cryptographic artifact.
+  Your personal 1-of-1 cipher engine. An offline cryptographic artifact, inspired by blockchain.
 </p>
 
 ---
 
 > **TL;DR**:
-> If you're a consumer: This is a secret password generator
-> If you're zk/crypto: This is zero-knowledge as it was meant to be. Ephemeral, local, and sovereign.
+> If you're a random user: This is a secret encryption environment.
+> For judges and cryptographers, Zero North Vault is a 1-of-1 unique cryptographic encryption environment that functions like an actual digital artifact, your own personal encryption language.
 >   
 > Machine validation is boring. You forgot who the proof was for. That's why your products suck.
 
-> **zkVault generates a 1-of-1 offline `.exe` cipher that can only encrypt/decrypt *your* information.**
+> **zkVault generates a 1-of-1 offline `.exe` encryption UI that can only encrypt/decrypt *your* information.**
 
 > No sync. No cloud. No verifier.  
-> Just you, your passphrase, and a proof-sealed cryptographic organism.
+> Just you, your passphrases, and a proof-sealed cryptographic object.
 > Your own vault. Your own encryption. Your own language. Forever. 
 
 ### 🧬 What is it?
@@ -28,21 +28,21 @@
 Zero North Vault (*zkVault*) is your personal secret passcode generator.  
 **ONLY you** own the `.exe` and the encryption logic. Store it locally. Use it offline.
 
-- For root generation, consider using a second letter of the chorus of a song you love — or anything memorable, unguessable, and yours.
-- Each `.exe` is **cryptographically distinct**. It is **uncrackable**. Not by me, not by the SEC, not by quantum.  
+- Pick a key word to use as the password for your string of text (infinite combinations), encrypt. Enter the same key word and string and decrypt.
+- Each `.exe` is **cryptographically distinct**. It is **uncrackable** using other user's vaults, unless theirs are identical builds.  
 - The only way to decrypt what it encrypts is through owning the machine output (.exe seeded program) itself.
 
-**Zero North Vault (zkVault)** is a dark-mode, black-box, air-gapped desktop app that generates a one-time-use encryption engine for your secrets.
+**Zero North Vault (zkVault)** is a dark-mode, black-box, air-gapped, artifact-bound symmetric encryption app. 
 
 Each vault:
 - Is cryptographically unique  
 - Can’t decrypt any other vault’s data  
 - Includes a zk-style `vaultproof.json` (for proof of individuality)
 
-Think:  
-A crypto-organism on a USB stick.  
-A personal language no one else speaks.  
-A book only you (or a loved one) can ever open.  
+Good for:  
+Keeping your own personal encryption language on a USB stick.  
+Encrypting data in a country where you're compromised, and decrypting it with a backup on your desktop at home.  
+A language only you (or a loved one you shared the program with) can ever speak.  
 
 **Nobody can recover your vault. You don’t own an account. There is no sync. No recovery. You are interacting with a physical cryptographic object.**
 
@@ -53,34 +53,29 @@ A book only you (or a loved one) can ever open.
 Every `.exe` is generated with:
 
 - A high-entropy cryptographic seed  
+- Custom AES runtime logic
 - A static genesis timestamp (`vault-genesis.txt`)  
 - A SHA-256 logic fingerprint (`vaultproof.json`)  
 
 You receive:
-- A standalone encryption `.exe`  
+- A .zip that packs up your encryption `.exe`  
 - A proof-of-build artifact  
 - A unique cipher engine that runs fully offline
-
-It’s not just AES-256.  
-It’s **you-256**.
-
 
 ---
 
 ### 🧠 Isn’t this just a toy?
 
 No.  
-It’s an encryption organism.
+It’s actually a cryptographic object.
 
 You’re not storing secrets.  
 You’re generating a cipher language that only you can speak.
 
 > 🔻 You don’t store secrets in the cloud.  
-> 🔺 You _generate_ secrets with localized physics.
+> 🔺 Zero North _generates_ an entire universe for your secrets, with localized physics.
 
-Zero North Vault flips the security model.  
-It’s not SaaS. It’s not Web3.  
-It’s **sovereign cryptographic architecture.**
+Zero North Vault flips the security model and gives you the tools to protect yourself.
 
 ### Lose the `.exe`, and no one — not even you — can recover the data.  
 ### That’s the point.
@@ -89,20 +84,22 @@ It’s **sovereign cryptographic architecture.**
 
 ### 🛠 Usage
 
-This repo contains the **frontend only**.
+This repo contains the **frontend only, sorry.**.
 
 To use the full system:
-1. Visit the hosted frontend or clone this repo locally  
-2. Input a passphrase (your “root”)  
+1. Visit my Devpost website (currently keeping hidden because I think my droplet would blow up) 
+2. Fetch your vault with my API and I'll generate you an encryption environment
 3. Encode or decode strings using your `.exe`  
 4. Optionally verify build authenticity using `verifyProof.js`  
+5. Profit?
 
 ---
 
 ### Note to fellow zk or cryptography nerds like me: 
 
 Yes, there’s a proof file.
-No, this isn't a consensus artifact. Yes, you can read **yours**. The only chain here is time and entropy; sealed at genesis in genesis.txt.
+No, this isn't a consensus artifact. Yes, you can read **yours**. 
+The idea was an applied 'genesis block' style framework injected into the actual runtime logic of each cryptographic environment.
 
 To verify:
 Move verifyProof.js into your /vaultproof/ directory and run it via
@@ -110,25 +107,12 @@ node verifyProof.js
 
 It confirms the artifact's logic fingerprint, timestamp, and seed integrity.
 
-This is only partially circuit math. This is not zkSnark. This is spycraft.
-
-
+This is a straight up spy tool, kind of.
 Don't be a nerd. Admit it, this is cool. 
 
-In case I'm not being clear enough-- 
+**This isn’t about public consensus or zk verification. It’s about information ownership and putting easy to use tools in human hands.**
 
-Fuck FIPS — this is for the people.
-Libsodium is for narcs.
-I’m not auditing shit.
-
-**This isn’t about public consensus or zk verification. It’s about information ownership and putting sovereign tools in human hands.**
-
-**This is the real deal. Tell that VC to go decrypt this: b4e44884ab88c27e7cf8db3b86bae7ba.9fa1... (They won’t. You will. That’s the point.)  Say what you need bro, get it out. Delete it after. Spin up another zkVault.**
-
-Don’t confuse silence for lack of proof.
-Don’t lose sight of privacy.
-
-This is zero-knowledge for people.
+**This is the real deal. Tell that VC to go decrypt this: b4e44884ab88c27e7cf8db3b86bae7ba.9fa1... (They won’t. You will. That’s the point.)  Say what you need bro, get it out. Delete it after. Spin up another vault.**
 
 ---
 
@@ -140,7 +124,7 @@ This is zero-knowledge for people.
 - **Frontend is source-visible** (Apache 2.0)  
 - **Encryption backend is closed-source and proprietary**
 
-> _zkVault is a cryptographic organism — a logic-body built from your intent and sealed in time._
+> _zkVault is a cryptographic object; a logic-item built from your intent and sealed in time._
 
 ---
 
@@ -154,8 +138,7 @@ Backend logic is proprietary and not included in this repository.
 ### 🧬 Credits
 
 Crafted by [**0north.eth**](https://github.com/0north-eth)  
-Architect of stealth systems, zk-native infrastructure, and offline sovereign UX.
-
+Strategic advisor for zk-gaming systems, $40k to charity, researching cryptography.
 ---
 
 > _"Blue lightsabers."_ 💙
