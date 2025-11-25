@@ -35,7 +35,7 @@ Zero North Vault (*ZeroNorthVault*) is your personal secret passcode generator.
 Each vault:
 - Is cryptographically unique  
 - Can’t decrypt any other vault’s data  
-- Includes a zk-style `vaultproof.json` (for proof of individuality)
+- Includes a merkle-like `vaultproof.json` (for proof of individuality)
 
 Good for:  
 Keeping your own personal encryption language on a USB stick.  
@@ -67,13 +67,10 @@ You receive:
 No.  
 It’s actually a cryptographic object.
 
-You’re not storing secrets.  
-You’re generating a cipher language that only you can speak.
-
 > 🔻 You don’t store secrets in the cloud.  
-> 🔺 Zero North _generates_ an entire universe for your secrets, with localized physics.
+> 🔺 Zero North _generates_ an little universe for your secrets.
 
-Zero North Vault flips the security model and gives you the tools to protect yourself.
+Zero North Vault flips the security model a bit and gives you the tools to protect yourself.
 
 ### Lose the `.exe`, and no one — not even you — can recover the data.  
 ### That’s the point.
@@ -93,10 +90,8 @@ To use the full system:
 
 ---
 
-### Note to fellow zk or cryptography nerds like me: 
+### Note to the pros: 
 
-Yes, there’s a proof file.
-No, this isn't a consensus artifact. Yes, you can read **yours**. 
 The idea was an applied 'genesis block' style framework injected into the actual runtime logic of each cryptographic environment.
 
 To verify:
@@ -105,12 +100,9 @@ node verifyProof.js
 
 It confirms the artifact's logic fingerprint, timestamp, and seed integrity.
 
-This is a straight up spy tool, kind of.
-Don't be a nerd. Admit it, this is cool. 
+This reminds me of those spy tools from when I was a kid, kind of.
 
-**This isn’t about public consensus or zk verification. It’s about information ownership and putting easy to use tools in human hands.**
-
-**This is the real deal. Tell that VC to go decrypt this: b4e44884ab88c27e7cf8db3b86bae7ba.9fa1... (They won’t. You will. That’s the point.)  Say what you need bro, get it out. Delete it after. Spin up another vault.**
+**This is the working artifact. Tell that VC to go decrypt this: b4e44884ab88c27e7cf8db3b86bae7ba.9fa1... (They won’t. You will. That’s the point.)  Say what you need bro, get it out. Delete it after. Spin up another vault.**
 
 ---
 
@@ -122,7 +114,6 @@ Don't be a nerd. Admit it, this is cool.
 - **Frontend is source-visible** (Apache 2.0)  
 - **Encryption backend is closed-source and proprietary**
 
-> _zkVault is a cryptographic object; a logic-item built from your intent and sealed in time._
 
 ---
 
