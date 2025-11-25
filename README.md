@@ -14,7 +14,7 @@
 > If you're a random user: This is a secret encryption environment.
 > For judges and cryptographers, Zero North Vault is a 1-of-1 unique cryptographic encryption environment that functions like an actual digital artifact, your own personal encryption language.
 
-> **zkVault generates a 1-of-1 offline `.exe` encryption UI that can only encrypt/decrypt *your* information.**
+> **Vaulst generate a 1-of-1 offline `.exe` encryption UI that can only encrypt/decrypt *your* information.**
 
 > No sync. No cloud. No verifier.  
 > Just you, your passphrases, and a proof-sealed cryptographic object.
@@ -23,7 +23,7 @@
 ### 🧬 What is it?
 
 **For Consumers**:  
-Zero North Vault (*zkVault*) is your personal secret passcode generator.  
+Zero North Vault (*ZeroNorthVault*) is your personal secret passcode generator.  
 **ONLY you** own the `.exe` and the encryption logic. Store it locally. Use it offline.
 
 - Pick a key word to use as the password for your string of text (infinite combinations), encrypt. Enter the same key word and string and decrypt.
