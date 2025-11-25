@@ -13,8 +13,6 @@
 > **TL;DR**:
 > If you're a random user: This is a secret encryption environment.
 > For judges and cryptographers, Zero North Vault is a 1-of-1 unique cryptographic encryption environment that functions like an actual digital artifact, your own personal encryption language.
->   
-> Machine validation is boring. You forgot who the proof was for. That's why your products suck.
 
 > **zkVault generates a 1-of-1 offline `.exe` encryption UI that can only encrypt/decrypt *your* information.**
 
